@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="roofimon.local" id="0" name="AuthorSpec" package="grails2spock" tests="8" time="1.262" timestamp="2012-01-09T09:37:41">
+      <properties />
+
+      <testcase classname="grails2spock.AuthorSpec" name="find author by firstname and lastname" time="1.132" />
+
+      <testcase classname="grails2spock.AuthorSpec" name="test firstname all constraints: 123456789012345678901 is false" time="0.033" />
+
+      <testcase classname="grails2spock.AuthorSpec" name="test firstname all constraints: 12345678901234567890 is true" time="0.0090" />
+
+      <testcase classname="grails2spock.AuthorSpec" name="test firstname all constraints:  is false" time="0.0090" />
+
+      <testcase classname="grails2spock.AuthorSpec" name="test lastname all constraints:  is false" time="0.01" />
+
+      <testcase classname="grails2spock.AuthorSpec" name="test lastname all constraints: 123456789012345678901 is false" time="0.0090" />
+
+      <testcase classname="grails2spock.AuthorSpec" name="test lastname all constraints: 12345678901234567890 is true" time="0.0070" />
+
+      <testcase classname="grails2spock.AuthorSpec" name="valid toString" time="0.015" />
+
+      <system-out><![CDATA[--Output from find author by firstname and lastname--
+--Output from test firstname all constraints: 123456789012345678901 is false--
+--Output from test firstname all constraints: 12345678901234567890 is true--
+--Output from test firstname all constraints:  is false--
+--Output from test lastname all constraints:  is false--
+--Output from test lastname all constraints: 123456789012345678901 is false--
+--Output from test lastname all constraints: 12345678901234567890 is true--
+--Output from valid toString--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from find author by firstname and lastname--
+--Output from test firstname all constraints: 123456789012345678901 is false--
+--Output from test firstname all constraints: 12345678901234567890 is true--
+--Output from test firstname all constraints:  is false--
+--Output from test lastname all constraints:  is false--
+--Output from test lastname all constraints: 123456789012345678901 is false--
+--Output from test lastname all constraints: 12345678901234567890 is true--
+--Output from valid toString--
+]]></system-err>
+
+  </testsuite>
+</testsuites>
