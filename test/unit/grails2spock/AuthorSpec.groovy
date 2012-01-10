@@ -64,7 +64,7 @@ class AuthorSpec extends UnitSpec{
 			def author = new Author(firstname:"Twin", lastname:"Panichsombat").save()
 		
 		then: 	
-		    author.toString() == "ID=2:Twin Panichsombat"
+		    author.toString() == "Twin Panichsombat"
 	}
 
 

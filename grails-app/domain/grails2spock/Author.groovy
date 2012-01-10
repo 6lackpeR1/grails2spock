@@ -9,6 +9,6 @@ class Author{
 	}
 	
 	String toString(){
-		"ID=$id:$firstname $lastname"
+		"$firstname $lastname"
 	}
 }
