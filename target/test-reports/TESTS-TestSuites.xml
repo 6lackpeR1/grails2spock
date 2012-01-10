@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="roofimon.local" id="0" name="AuthorSpec" package="grails2spock" tests="8" time="0.125" timestamp="2012-01-10T08:38:21">
+  <testsuite errors="0" failures="0" hostname="roofimon.local" id="0" name="AuthorSpec" package="grails2spock" tests="8" time="0.087" timestamp="2012-01-10T11:10:22">
       <properties />
 
-      <testcase classname="grails2spock.AuthorSpec" name="find author by firstname and lastname" time="0.039" />
+      <testcase classname="grails2spock.AuthorSpec" name="find author by firstname and lastname" time="0.022" />
 
-      <testcase classname="grails2spock.AuthorSpec" name="test firstname all constraints: 123456789012345678901 is false" time="0.01" />
+      <testcase classname="grails2spock.AuthorSpec" name="test firstname all constraints: 123456789012345678901 is false" time="0.0060" />
 
-      <testcase classname="grails2spock.AuthorSpec" name="test firstname all constraints: 12345678901234567890 is true" time="0.0080" />
+      <testcase classname="grails2spock.AuthorSpec" name="test firstname all constraints: 12345678901234567890 is true" time="0.0060" />
 
-      <testcase classname="grails2spock.AuthorSpec" name="test firstname all constraints:  is false" time="0.01" />
+      <testcase classname="grails2spock.AuthorSpec" name="test firstname all constraints:  is false" time="0.0060" />
 
-      <testcase classname="grails2spock.AuthorSpec" name="test lastname all constraints:  is false" time="0.0090" />
+      <testcase classname="grails2spock.AuthorSpec" name="test lastname all constraints:  is false" time="0.0050" />
 
-      <testcase classname="grails2spock.AuthorSpec" name="test lastname all constraints: 123456789012345678901 is false" time="0.0090" />
+      <testcase classname="grails2spock.AuthorSpec" name="test lastname all constraints: 123456789012345678901 is false" time="0.0050" />
 
-      <testcase classname="grails2spock.AuthorSpec" name="test lastname all constraints: 12345678901234567890 is true" time="0.0080" />
+      <testcase classname="grails2spock.AuthorSpec" name="test lastname all constraints: 12345678901234567890 is true" time="0.0050" />
 
-      <testcase classname="grails2spock.AuthorSpec" name="valid toString" time="0.011" />
+      <testcase classname="grails2spock.AuthorSpec" name="valid toString" time="0.01" />
 
       <system-out><![CDATA[--Output from find author by firstname and lastname--
 --Output from test firstname all constraints: 123456789012345678901 is false--
@@ -40,27 +40,35 @@
 ]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="roofimon.local" id="1" name="BookSpec" package="grails2spock" tests="4" time="0.163" timestamp="2012-01-10T08:38:21">
+  <testsuite errors="0" failures="0" hostname="roofimon.local" id="1" name="BookSpec" package="grails2spock" tests="6" time="0.084" timestamp="2012-01-10T11:10:22">
       <properties />
 
-      <testcase classname="grails2spock.BookSpec" name="find book by title" time="0.103" />
+      <testcase classname="grails2spock.BookSpec" name="book should have all these attributes" time="0.0070" />
 
-      <testcase classname="grails2spock.BookSpec" name="book should display it&apos;s title as a result of toString" time="0.023" />
+      <testcase classname="grails2spock.BookSpec" name="find book by title" time="0.026" />
 
-      <testcase classname="grails2spock.BookSpec" name="book title should not longer than 50 characters" time="0.018" />
+      <testcase classname="grails2spock.BookSpec" name="book should display it&apos;s title as a result of toString" time="0.0050" />
 
-      <testcase classname="grails2spock.BookSpec" name="book title should not be blank" time="0.018" />
+      <testcase classname="grails2spock.BookSpec" name="book title should not longer than 50 characters" time="0.013" />
 
-      <system-out><![CDATA[--Output from find book by title--
+      <testcase classname="grails2spock.BookSpec" name="book title should not be blank" time="0.017" />
+
+      <testcase classname="grails2spock.BookSpec" name="book isbn must not longer than 10 digit" time="0.014" />
+
+      <system-out><![CDATA[--Output from book should have all these attributes--
+--Output from find book by title--
 --Output from book should display it's title as a result of toString--
 --Output from book title should not longer than 50 characters--
 --Output from book title should not be blank--
+--Output from book isbn must not longer than 10 digit--
 ]]></system-out>
 
-      <system-err><![CDATA[--Output from find book by title--
+      <system-err><![CDATA[--Output from book should have all these attributes--
+--Output from find book by title--
 --Output from book should display it's title as a result of toString--
 --Output from book title should not longer than 50 characters--
 --Output from book title should not be blank--
+--Output from book isbn must not longer than 10 digit--
 ]]></system-err>
 
   </testsuite>
