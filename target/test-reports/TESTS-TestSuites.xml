@@ -1,40 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="1" failures="0" hostname="roofimon.local" id="0" name="AuthorControllerSpec" package="grails2spock" tests="1" time="0.946" timestamp="2012-01-19T10:13:47">
+  <testsuite errors="0" failures="0" hostname="roofimon.local" id="0" name="AuthorControllerSpec" package="grails2spock" tests="2" time="1.12" timestamp="2012-01-21T04:59:38">
       <properties />
 
-      <testcase classname="grails2spock.AuthorControllerSpec" name="index action" time="0.928">
-          <error message="No such property: AuthorController for class: grails2spock.AuthorControllerSpec" type="groovy.lang.MissingPropertyException">groovy.lang.MissingPropertyException: No such property: AuthorController for class: grails2spock.AuthorControllerSpec
-	at grails2spock.AuthorControllerSpec.index action(AuthorControllerSpec.groovy:5)
-</error>
+      <testcase classname="grails2spock.AuthorControllerSpec" name="text action" time="0.949" />
 
-      </testcase>
+      <testcase classname="grails2spock.AuthorControllerSpec" name="index action" time="0.143" />
 
-      <system-out><![CDATA[--Output from index action--
+      <system-out><![CDATA[--Output from text action--
+--Output from index action--
 ]]></system-out>
 
-      <system-err><![CDATA[--Output from index action--
+      <system-err><![CDATA[--Output from text action--
+--Output from index action--
 ]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="roofimon.local" id="1" name="AuthorSpec" package="grails2spock" tests="8" time="1.021" timestamp="2012-01-19T10:13:48">
+  <testsuite errors="0" failures="0" hostname="roofimon.local" id="1" name="AuthorSpec" package="grails2spock" tests="8" time="0.673" timestamp="2012-01-21T04:59:39">
       <properties />
 
-      <testcase classname="grails2spock.AuthorSpec" name="find author by firstname and lastname" time="0.814" />
+      <testcase classname="grails2spock.AuthorSpec" name="find author by firstname and lastname" time="0.506" />
 
-      <testcase classname="grails2spock.AuthorSpec" name="test firstname all constraints: 123456789012345678901 is false" time="0.044" />
+      <testcase classname="grails2spock.AuthorSpec" name="test firstname all constraints: 123456789012345678901 is false" time="0.045" />
 
-      <testcase classname="grails2spock.AuthorSpec" name="test firstname all constraints: 12345678901234567890 is true" time="0.025" />
+      <testcase classname="grails2spock.AuthorSpec" name="test firstname all constraints: 12345678901234567890 is true" time="0.011" />
 
-      <testcase classname="grails2spock.AuthorSpec" name="test firstname all constraints:  is false" time="0.019" />
+      <testcase classname="grails2spock.AuthorSpec" name="test firstname all constraints:  is false" time="0.024" />
 
-      <testcase classname="grails2spock.AuthorSpec" name="test lastname all constraints:  is false" time="0.023" />
+      <testcase classname="grails2spock.AuthorSpec" name="test lastname all constraints:  is false" time="0.012" />
 
-      <testcase classname="grails2spock.AuthorSpec" name="test lastname all constraints: 123456789012345678901 is false" time="0.025" />
+      <testcase classname="grails2spock.AuthorSpec" name="test lastname all constraints: 123456789012345678901 is false" time="0.011" />
 
-      <testcase classname="grails2spock.AuthorSpec" name="test lastname all constraints: 12345678901234567890 is true" time="0.0090" />
+      <testcase classname="grails2spock.AuthorSpec" name="test lastname all constraints: 12345678901234567890 is true" time="0.012" />
 
-      <testcase classname="grails2spock.AuthorSpec" name="valid toString" time="0.012" />
+      <testcase classname="grails2spock.AuthorSpec" name="valid toString" time="0.027" />
 
       <system-out><![CDATA[--Output from find author by firstname and lastname--
 --Output from test firstname all constraints: 123456789012345678901 is false--
@@ -57,20 +56,20 @@
 ]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="roofimon.local" id="2" name="BookSpec" package="grails2spock" tests="6" time="0.331" timestamp="2012-01-19T10:13:49">
+  <testsuite errors="0" failures="0" hostname="roofimon.local" id="2" name="BookSpec" package="grails2spock" tests="6" time="0.495" timestamp="2012-01-21T04:59:40">
       <properties />
 
-      <testcase classname="grails2spock.BookSpec" name="book should have all these attributes" time="0.04" />
+      <testcase classname="grails2spock.BookSpec" name="book should have all these attributes" time="0.169" />
 
-      <testcase classname="grails2spock.BookSpec" name="find book by title" time="0.027" />
+      <testcase classname="grails2spock.BookSpec" name="find book by title" time="0.211" />
 
-      <testcase classname="grails2spock.BookSpec" name="book should display it&apos;s title as a result of toString" time="0.0070" />
+      <testcase classname="grails2spock.BookSpec" name="book should display it&apos;s title as a result of toString" time="0.018" />
 
-      <testcase classname="grails2spock.BookSpec" name="book title should not longer than 50 characters" time="0.197" />
+      <testcase classname="grails2spock.BookSpec" name="book title should not longer than 50 characters" time="0.054" />
 
-      <testcase classname="grails2spock.BookSpec" name="book title should not be blank" time="0.016" />
+      <testcase classname="grails2spock.BookSpec" name="book title should not be blank" time="0.018" />
 
-      <testcase classname="grails2spock.BookSpec" name="book isbn must not longer than 10 digit" time="0.043" />
+      <testcase classname="grails2spock.BookSpec" name="book isbn must not longer than 10 digit" time="0.021" />
 
       <system-out><![CDATA[--Output from book should have all these attributes--
 --Output from find book by title--
@@ -86,6 +85,29 @@
 --Output from book title should not longer than 50 characters--
 --Output from book title should not be blank--
 --Output from book isbn must not longer than 10 digit--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="roofimon.local" id="3" name="BookStoreServiceSpec" package="grails2spock" tests="3" time="0.197" timestamp="2012-01-21T04:59:41">
+      <properties />
+
+      <testcase classname="grails2spock.BookStoreServiceSpec" name="when creating thesis a new book is created" time="0.049" />
+
+      <testcase classname="grails2spock.BookStoreServiceSpec" name="when creating thesis author is assigned to thesis" time="0.038" />
+
+      <testcase classname="grails2spock.BookStoreServiceSpec" name="when creating guttenberg thesis title is set" time="0.109" />
+
+      <system-out><![CDATA[--Output from when creating thesis a new book is created--
+Book Instance My copied thesis
+--Output from when creating thesis author is assigned to thesis--
+Book Instance My copied thesis
+--Output from when creating guttenberg thesis title is set--
+Book Instance My copied thesis
+]]></system-out>
+
+      <system-err><![CDATA[--Output from when creating thesis a new book is created--
+--Output from when creating thesis author is assigned to thesis--
+--Output from when creating guttenberg thesis title is set--
 ]]></system-err>
 
   </testsuite>

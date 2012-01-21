@@ -1,13 +1,23 @@
 package grails2spock
-class AuthorControllerSpec extends ExtendedControllerSpec{
-	  def 'index action'() {
-    setup:
-    mockLogging(AuthorController, true)
 
-    when:
-    controller.index()
+import grails.plugin.spock.*
 
-    then:
-    redirectArgs.action == "list"
-  }
+class AuthorControllerSpec extends ControllerSpec {
+	def 'text action'() { 
+		when: 
+			controller.text()
+		then: 
+			mockResponse.contentAsString == "text" 
+	}
+
+	def 'index action'() {
+    	setup:
+    		mockLogging(AuthorController, true)
+
+    	when:
+    		controller.index()
+
+    	then:
+    		redirectArgs.action == "list"
+  	}	
 }
